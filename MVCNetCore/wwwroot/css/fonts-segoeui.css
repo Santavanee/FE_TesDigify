@@ -1,0 +1,104 @@
+/* - Fonts Segoe UI - */
+ 
+/* Regular */
+@font-face {
+  font-family: 'Segoe UI Small Regular';
+  src:
+    local('Segoe UI Small Regular'),
+    url('../font/Segoe-UI-Variable-Static-Small.ttf') format('truetype-variations');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI Display Regular';
+  src:
+    local('Segoe UI Display Regular'),
+    url('../font/Segoe-UI-Variable-Static-Display.ttf') format('truetype-variations');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI Text Regular';
+  src:
+    local('Segoe UI Text Regular'),
+    url('../font/Segoe-UI-Variable-Static-Text.ttf') format('truetype-variations');
+  font-style: normal;
+}
+
+/* Semibold */
+@font-face {
+  font-family: 'Segoe UI Small Semibold';
+  src:
+    local('Segoe UI Small Semibold'),
+    url('../font/Segoe-UI-Variable-Static-Small-Semibold.ttf') format('truetype-variations');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI Display Semibold';
+  src:
+    local('Segoe UI Display Semibold'),
+    url('../font/Segoe-UI-Variable-Static-Display-Semibold.ttf') format('truetype-variations');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI Text Semibold';
+  src:
+    local('Segoe UI Text Semibold'),
+    url('../font/Segoe-UI-Variable-Static-Text-Semibold.ttf') format('truetype-variations');
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Segoe UI Small Bold';
+  src:
+    local('Segoe UI Display Bold'),
+    url('../font/Segoe-UI-Variable-Static-Small-Bold.ttf') format('truetype-variations');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI Display Bold';
+  src:
+    local('Segoe UI Display Bold'),
+    url('../font/Segoe-UI-Variable-Static-Display-Bold.ttf') format('truetype-variations');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI Text Bold';
+  src:
+    local('Segoe UI Display Bold'),
+    url('../font/Segoe-UI-Variable-Static-Text-Bold.ttf') format('truetype-variations');
+  font-style: normal;
+}
+
+
+/* Class Font Regular  */
+.regular-small {
+  font-family: 'Segoe UI Small Regular';
+}
+.regular-display {
+  font-family: 'Segoe UI Display Regular';
+}
+.regular-text {
+  font-family: 'Segoe UI Text Regular';
+}
+
+/* Class Font Semibold  */
+.medium-small {
+  font-family: 'Segoe UI Small Semibold';
+}
+.medium-display {
+  font-family: 'Segoe UI Display Semibold';
+}
+.medium-text {
+  font-family: 'Segoe UI Text Semibold';
+}
+
+/* Class Font Bold  */
+.bold-small {
+  font-family: 'Segoe UI Small Bold';
+}
+.bold-display {
+  font-family: 'Segoe UI Display Bold';
+}
+.bold-text {
+  font-family: 'Segoe UI Text Bold';
+}

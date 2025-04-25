@@ -1,0 +1,379 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+}
+<style>
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    /* Core styles/functionality */
+    .tab {
+        position: relative;
+        color: #e5f3ff;
+        border: 1px solid;
+        border-radius: 0.5rem;
+        margin: -9px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+        .tab input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+
+    .tab__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.35s;
+    }
+
+    .tab input:checked ~ .tab__content {
+        max-height: 55rem;
+        background: #175e9c;
+        color: white;
+    }
+
+    /* Visual styles */
+    .accordion {
+        color: #006cb8;
+        font-size: 15px;
+        overflow: hidden;
+    }
+
+    .tab__label,
+    .tab__close {
+        display: flex;
+        color: white;
+        background: #227093;
+        cursor: pointer;
+    }
+
+    .tab__label {
+        justify-content: space-between;
+        padding: 13px;
+        background: white;
+        color: #66a7d4;
+    }
+
+        .tab__label::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transform: rotate(90deg);
+            transition: all 0.35s;
+        }
+
+    .tab input:checked + .tab__label::after {
+        transform: rotate(270deg);
+    }
+
+    .tab__content p {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .tab__close {
+        justify-content: flex-end;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+
+    /* Arrow animation */
+    .tab input:not(:checked) + .tab__label:hover::after {
+        animation: bounce .5s infinite;
+    }
+
+</style>
+
+
+<div id="loadingOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; text-align:center;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:white;">
+        <h3>Processing...</h3>
+    </div>
+</div>
+
+<body>
+    <div class="content content-mt-min4" style="padding-top:90px; background-color: #e7eff6;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7">
+
+                    <div style="background: transparent; !important; border : 0 !important;">
+                        <div class="card-body py-3">
+                            <div class="px-3 mb-4">
+                                <h2 class="title-hallo medium-text" style="line-height: 1.6rem; ">
+                                    JASA PERBANTUAN PENGAWASAN UNTUK PEKERJAAN PENANGGULANGAN LONGSOR LAWE
+                                </h2>
+                                <img src="img/linesna.png">
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div>
+                                            <h6><b>Registration  Deadline</b></h6>
+                                            <span style="font-size: 13px;"><b>Start</b></span><br>
+                                            <p style="font-size: 17px;">
+                                                Monday, 25th September 2023<br>
+                                                08.30 WIB (UTC+7})<br>
+                                                <span style="font-size: 13px;"><b>End</b></span><br>
+                                                Thursday, 28th September 2023<br>
+                                                16.30 WIB (UTC+7})
+                                            </p>
+                                            <button class="btn btn-danger">3 Days : 20 Hours : 58 Minutes Remaining</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="contact-add-item">
+                                            <div>
+                                                <p class="mb-0"><img src="img/kotakkotak.jpg"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 style="padding-left:20px">
+                                <b>Registration Guidance</b>
+                            </h6>
+                            <div class="doc-attachement-item" style="margin: 20px;">
+                                <img class="icon-file-xs" src="img/icon-PDF-file-solid.svg">
+                                <div class="file-meta">
+                                    <span class="text-ellipsis bold-text">File-Guide-23092024.pdf</span>
+                                    <span>1.290 Kb</span>
+                                </div>
+                                <div class="doc-attachement-action">
+                                    <button class="btn btn-icon btn-sm btn-outline-primary" data-toggle="modal" data-target="#Modal-PDF"><i class="ppcs-icon icon-eye-open"></i></button>
+                                    <button class="btn btn-icon btn-sm btn-outline-primary"><i class="ppcs-icon icon-download"></i></button>
+
+                                </div>
+
+                            </div>
+                            <h6 style="padding-left:20px;">
+                                <b>Frequently Asked Question (FAQ)</b>
+                            </h6>
+                            <div class="p-3 px-2">
+                                <section class="accordion">
+                                    <div class="tab">
+                                        <input type="checkbox" name="accordion-1" id="cb1">
+                                        <label for="cb1" class="tab__label"><b>How to Register the PQ?</b></label>
+                                        <div class="tab__content">
+                                            <p>
+                                                Individual Company must filling-out the registration form starting from Monday, 04 September 2023 08.00am Jakarta Local Time up to Thursday, 07 September 2023 04.00pm Jakarta Local Time. Beyond this period, the link will be automatically closed.<br>
+                                                Following fields shall be input by using alphabetic characters and numeral only (please avoid any symbols): Company Name, NPWP/Tax Identification Number, Director Name, PIC Name and Phone Number
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="checkbox" name="accordion-1" id="cb2">
+                                        <label for="cb2" class="tab__label"><b>What documents are Required for PQ Registration?</b></label>
+                                        <div class="tab__content">
+                                            <p>
+                                                Company must upload following documents:<br>
+                                                1. Nomor Pokok Wajib Pajak (NPWP) / Taxpayer Identification Number, and<br>
+                                                2. Power of Attorney from Chief Executive Officer or equivalent position in the Company, to authorize the Company's PIC.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="checkbox" name="accordion-1" id="cb3">
+                                        <label for="cb3" class="tab__label"><b>What if I don't submit the required documents?</b></label>
+                                        <div class="tab__content">
+                                            <p>You cannot proceed with your application if you do not submit the required documents.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="checkbox" name="accordion-1" id="cb4">
+                                        <label for="cb4" class="tab__label"><b>What if I have trouble??</b></label>
+                                        <div class="tab__content">
+                                            <p>If Company experiences any trouble / difficulties during Prequalification registration process, please do not hesitate to contact us at sekrepc.dht4@pertamina.com..</p>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card p-4">
+                        <div class="row">
+                            <div class="col-12" style="padding-bottom: 30px;">
+                                <span class="sign-required size-textsm">* Required</span>
+                            </div>
+                            <div class="p-3 py-3">
+                                <div class="form-one-col-row form-col-column">
+                                    <div class="label-form">Company Name<span class="sign-required">*</span></div>
+                                    <div class="field-form">
+                                        <div class="field-form">
+                                            <input type="text" class="form-control" id="CompanyName" placeholder="Enter Text">
+                                        </div>
+                                    </div>
+                                </div><!-- /.form-one-col-row -->
+                                <div class="form-one-col-row form-col-column">
+                                    <div class="label-form">NPWP<span class="sign-required">*</span></div>
+                                    <div class="field-form">
+                                        <div class="field-form">
+                                            <input type="text" class="form-control" id="NPWP" placeholder="Enter Text">
+                                        </div>
+                                    </div>
+                                </div><!-- /.form-one-col-row -->
+                                <div class="form-one-col-row form-col-column">
+                                    <div class="label-form">Director Name<span class="sign-required">*</span></div>
+                                    <div class="field-form">
+                                        <div class="field-form">
+                                            <input type="text" class="form-control" id="DirectorName" placeholder="Enter Text">
+                                        </div>
+                                    </div>
+                                </div><!-- /.form-one-col-row -->
+                                <div class="form-one-col-row form-col-column">
+                                    <div class="label-form">PIC Name<span class="sign-required">*</span></div>
+                                    <div class="field-form">
+                                        <div class="field-form">
+                                            <input type="text" class="form-control" id="PICName" placeholder="Enter Text">
+                                        </div>
+                                    </div>
+                                </div><!-- /.form-one-col-row -->
+                                <div class="form-one-col-row form-col-column">
+                                    <div class="label-form">Email<span class="sign-required">*</span></div>
+                                    <div class="field-form">
+                                        <div class="field-form">
+                                            <input type="text" class="form-control" id="Email" placeholder="Enter Text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-one-col-row form-col-column">
+                                    <div class="label-form">Phone Number<span class="sign-required">*</span></div>
+                                    <div class="field-form">
+                                        <div class="field-form">
+                                            <input type="text" class="form-control" id="PhoneNumber" placeholder="Enter Text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 style="padding-left:5px;"><b>Document Upload</b></h6>
+
+                                <div class="row-input-file">
+                                    <div class="label">NPWP <span class="sign-required">*</span></div>
+                                    <div class="input-group custominputfile">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="FileNPWP">
+                                            <label class="custom-file-label" for="FileAnnouncement">Search file</label>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text textapps-xs"><img class="img-icon" src="img/icon-upload-file-solid.svg"> Upload</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-input-file">
+                                    <div class="label">Power of Attorey <span class="sign-required">*</span></div>
+                                    <div class="input-group custominputfile">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="FilePowerOfAttorey">
+                                            <label class="custom-file-label" for="FileAnnouncement">Search file</label>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text textapps-xs"><img class="img-icon" src="img/icon-upload-file-solid.svg"> Upload</span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1">
+                                        <label for="customCheckbox1" class="custom-control-label">
+                                            Allow access to invitation after closing date
+                                        </label>
+                                        <br>
+                                        <div class="d-flex align-items-center gap-xl flex-wrap header-content-action">
+                                            <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#">Clear Form</button>
+                                            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#" id="submitBtn">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+        <!--</div>-->
+        <!-- /.content -->
+    </div>
+</body>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            
+            //Function
+            function validateForm() {
+                const companyName = $('#CompanyName').val().trim();
+                const npwp = $('#NPWP').val().trim();
+                const directorName = $('#DirectorName').val().trim();
+                const picName = $('#PICName').val().trim();
+                const email = $('#Email').val().trim();
+                const phoneNumber = $('#PhoneNumber').val().trim();
+                const fileNPWP = $('#FileNPWP')[0].files[0];
+                const filePowerOfAttorey = $('#FilePowerOfAttorey')[0].files[0];
+
+                if (!companyName || !npwp || !directorName || !picName || !email || !phoneNumber || !fileNPWP || !filePowerOfAttorey) {
+                    return false;
+                }
+                return true;
+            }
+
+            //Event
+            $('#submitBtn').on('click', function (e) {
+                e.preventDefault();
+                if (!validateForm()) {
+                    alert('Please fill in all required fields and upload both files.');
+                    return;
+                }
+
+                let formData = new FormData();
+
+                // Add text inputs
+                formData.append("CompanyName", $('#CompanyName').val());
+                formData.append("NPWP", $('#NPWP').val());
+                formData.append("DirectorName", $('#DirectorName').val());
+                formData.append("PICName", $('#PICName').val());
+                formData.append("Email", $('#Email').val());
+                formData.append("PhoneNumber", $('#PhoneNumber').val());
+                formData.append("AllowAccess", $('#customCheckbox1').is(':checked'));
+
+                // Add files
+                let fileNPWP = $('#FileNPWP')[0].files[0];
+                let filePower = $('#FilePowerOfAttorey')[0].files[0];
+
+                if (fileNPWP) {
+                    formData.append("FileNPWP", fileNPWP);
+                }
+                if (filePower) {
+                    formData.append("FilePowerOfAttorey", filePower);
+                }
+                // Show loading overlay
+                $('#loadingOverlay').show();
+
+                $.ajax({
+                    url: '/Register/Register',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        $('#loadingOverlay').hide();                     
+                        alert("Data submitted successfully!");
+                    },
+                    error: function (xhr, status, error) {
+                        $('#loadingOverlay').hide();
+                        alert('Failed to submit data. Please try again.');
+                    }
+                });
+            });
+
+
+            //End document ready
+        })
+    </script>
+}

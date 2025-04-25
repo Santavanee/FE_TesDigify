@@ -1,0 +1,121 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\css\fonts-segoeui.css" />
+    <Content Remove="wwwroot\css\icon-ppcs.css" />
+    <Content Remove="wwwroot\css\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\.DS_Store" />
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\fonts-segoeui.css" />
+    <None Include="wwwroot\css\icon-ppcs.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\img\._.DS_Store" />
+    <None Include="wwwroot\img\._barcode-demo.png" />
+    <None Include="wwwroot\img\._chart-donut.png" />
+    <None Include="wwwroot\img\._chart-lines.png" />
+    <None Include="wwwroot\img\._chartimg.png" />
+    <None Include="wwwroot\img\._demo-attachmentwidget.png" />
+    <None Include="wwwroot\img\._icon-streamline-grap.svg" />
+    <None Include="wwwroot\img\._ilustrasi-1.svg" />
+    <None Include="wwwroot\img\._ilustrasi-compliment.png" />
+    <None Include="wwwroot\img\._ilustrasi-notfound.png" />
+    <None Include="wwwroot\img\._img_edit.svg" />
+    <None Include="wwwroot\img\._img_notif_outline.svg" />
+    <None Include="wwwroot\img\._img_rfi.svg" />
+    <None Include="wwwroot\img\._img_rfi_light_blue_800 %281%29.svg" />
+    <None Include="wwwroot\img\._img_rfi_light_blue_800.svg" />
+    <None Include="wwwroot\img\._logo-apps-large.svg" />
+    <None Include="wwwroot\img\._photo1.png" />
+    <None Include="wwwroot\img\._photo2.png" />
+    <None Include="wwwroot\img\._photo3.jpg" />
+    <None Include="wwwroot\img\._photo4.jpg" />
+    <None Include="wwwroot\img\._user1-128x128.jpg" />
+    <None Include="wwwroot\img\._user2-160x160.jpg" />
+    <None Include="wwwroot\img\2okeoke.png" />
+    <None Include="wwwroot\img\AKHLAK-outline.svg" />
+    <None Include="wwwroot\img\AKHLAK-solid.svg" />
+    <None Include="wwwroot\img\barcode-demo.png" />
+    <None Include="wwwroot\img\calendar-outline.svg" />
+    <None Include="wwwroot\img\calendar-solid.svg" />
+    <None Include="wwwroot\img\chart-donut.png" />
+    <None Include="wwwroot\img\chart-lines.png" />
+    <None Include="wwwroot\img\chartimg.png" />
+    <None Include="wwwroot\img\demo-attachmentwidget.png" />
+    <None Include="wwwroot\img\disk.png" />
+    <None Include="wwwroot\img\EPI-outline.svg" />
+    <None Include="wwwroot\img\EPI-solid.svg" />
+    <None Include="wwwroot\img\header.png" />
+    <None Include="wwwroot\img\home-outline.svg" />
+    <None Include="wwwroot\img\home-solid.svg" />
+    <None Include="wwwroot\img\icon-add-task.svg" />
+    <None Include="wwwroot\img\icon-arrow-down.svg" />
+    <None Include="wwwroot\img\icon-arrow-up-doc.svg" />
+    <None Include="wwwroot\img\icon-contract-sign.svg" />
+    <None Include="wwwroot\img\icon-dashboard-clarification.svg" />
+    <None Include="wwwroot\img\icon-download-cloud.svg" />
+    <None Include="wwwroot\img\icon-form-outline.svg" />
+    <None Include="wwwroot\img\icon-inbox.svg" />
+    <None Include="wwwroot\img\icon-outline-question-answer.svg" />
+    <None Include="wwwroot\img\icon-outline-upload-file.svg" />
+    <None Include="wwwroot\img\icon-PDF-file-solid.svg" />
+    <None Include="wwwroot\img\icon-send-outline.svg" />
+    <None Include="wwwroot\img\icon-streamline-grap.svg" />
+    <None Include="wwwroot\img\icon-unread-inbox.svg" />
+    <None Include="wwwroot\img\icon-upload-file-solid.svg" />
+    <None Include="wwwroot\img\ilustrasi-1.svg" />
+    <None Include="wwwroot\img\ilustrasi-compliment.png" />
+    <None Include="wwwroot\img\ilustrasi-notfound.png" />
+    <None Include="wwwroot\img\img_edit.svg" />
+    <None Include="wwwroot\img\img_notif_outline.svg" />
+    <None Include="wwwroot\img\img_rfi.svg" />
+    <None Include="wwwroot\img\img_rfi_light_blue_800 %281%29.svg" />
+    <None Include="wwwroot\img\img_rfi_light_blue_800.svg" />
+    <None Include="wwwroot\img\kotakkotak.jpg" />
+    <None Include="wwwroot\img\linesna.png" />
+    <None Include="wwwroot\img\logo-apps-large.svg" />
+    <None Include="wwwroot\img\logo-pertamina-icon.svg" />
+    <None Include="wwwroot\img\okeoke2.jpg" />
+    <None Include="wwwroot\img\operation-outline.svg" />
+    <None Include="wwwroot\img\operation-solid.svg" />
+    <None Include="wwwroot\img\photo1.png" />
+    <None Include="wwwroot\img\photo2.png" />
+    <None Include="wwwroot\img\photo3.jpg" />
+    <None Include="wwwroot\img\photo4.jpg" />
+    <None Include="wwwroot\img\secretary-outline.svg" />
+    <None Include="wwwroot\img\secretary-solid.svg" />
+    <None Include="wwwroot\img\send.png" />
+    <None Include="wwwroot\img\statistic-outline.svg" />
+    <None Include="wwwroot\img\statistic-solid.svg" />
+    <None Include="wwwroot\img\user1-128x128.jpg" />
+    <None Include="wwwroot\img\user2-160x160.jpg" />
+    <None Include="wwwroot\img\workpackage-outline.svg" />
+    <None Include="wwwroot\img\workpackage-solid.svg" />
+    <None Include="wwwroot\img\ww.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuzzLogic\BuzzLogic.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCNetCore", "MVCNetCore\MVCNetCore.csproj", "{47B578A5-C22F-4C04-8E15-915891E41221}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{69A5ED65-39B2-407A-9059-A8C6BFD5BEEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuzzLogic", "BuzzLogic\BuzzLogic.csproj", "{A600F64D-D150-4A0F-AC0A-34552DEB59CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B578A5-C22F-4C04-8E15-915891E41221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B578A5-C22F-4C04-8E15-915891E41221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B578A5-C22F-4C04-8E15-915891E41221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B578A5-C22F-4C04-8E15-915891E41221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A5ED65-39B2-407A-9059-A8C6BFD5BEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A5ED65-39B2-407A-9059-A8C6BFD5BEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A5ED65-39B2-407A-9059-A8C6BFD5BEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A5ED65-39B2-407A-9059-A8C6BFD5BEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A600F64D-D150-4A0F-AC0A-34552DEB59CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A600F64D-D150-4A0F-AC0A-34552DEB59CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A600F64D-D150-4A0F-AC0A-34552DEB59CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A600F64D-D150-4A0F-AC0A-34552DEB59CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {120D561E-1DA1-4FC4-84B5-0759A16CDA8A}
+	EndGlobalSection
+EndGlobal
